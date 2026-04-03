@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Doctors</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        const sections = document.querySelectorAll('.section');
+
+        window.addEventListener('scroll', () => {
+            sections.forEach(sec => {
+                const top = sec.getBoundingClientRect().top;
+                if (top < window.innerHeight - 100) {
+                    sec.classList.add('fade-in');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🇮🇳 IndianHub</div>
+        <ul class="nav-links">
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="army.html">Army</a></li>
+            <li><a href="doctor.html">Doctors</a></li>
+            <li><a href="police.html">Police</a></li>
+            <li><a href="farmer.html">Farmers</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero doctors-hero">
+        <h2><i class="fas fa-user-doctor"></i> Doctors</h2>
+        <p>Heroes who save lives and protect health</p>
+    </section>
+
+    <section class="section">
+        <h2>About Doctors</h2>
+        <p>Doctors play a vital role in India's healthcare system, providing medical care and saving millions of lives.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Responsibilities</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Patient Care</h3>
+                <p>Diagnosing and treating diseases.</p>
+            </div>
+            <div class="card">
+                <h3>Emergency Services</h3>
+                <p>Handling critical medical situations.</p>
+            </div>
+            <div class="card">
+                <h3>Public Health</h3>
+                <p>Improving overall healthcare awareness.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 IndianHub 🇮🇳</p>
+    </footer>
+
+</body>
+
+</html>

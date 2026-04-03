@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Indian Army</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        const sections = document.querySelectorAll('.section');
+
+        window.addEventListener('scroll', () => {
+            sections.forEach(sec => {
+                const top = sec.getBoundingClientRect().top;
+                if (top < window.innerHeight - 100) {
+                    sec.classList.add('fade-in');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">🇮🇳 IndianHub</div>
+        <ul class="nav-links">
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="army.html">Army</a></li>
+            <li><a href="doctor.html">Doctors</a></li>
+            <li><a href="police.html">Police</a></li>
+            <li><a href="farmer.html">Farmers</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero army-hero">
+        <h2><i class="fas fa-shield-alt"></i> Army</h2>
+        <p>Guardians of the Nation, Protecting India with Courage and Honor</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section">
+        <h2>About Indian Army</h2>
+        <p>
+            The Indian Army is the land-based branch of the armed forces of India.
+            It is one of the largest and strongest armies in the world, responsible for protecting
+            the country from external threats and maintaining peace and security.
+        </p>
+    </section>
+
+    <!-- ROLES -->
+    <section class="section">
+        <h2>Key Responsibilities</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Border Security</h3>
+                <p>Protecting India's borders from external threats.</p>
+            </div>
+
+            <div class="card">
+                <h3>Disaster Relief</h3>
+                <p>Helping citizens during floods, earthquakes, and emergencies.</p>
+            </div>
+
+            <div class="card">
+                <h3>Peace Keeping</h3>
+                <p>Participating in global peace missions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section">
+        <h2>Achievements</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Kargil Victory</h3>
+                <p>Successful operation to protect India's territory.</p>
+            </div>
+
+            <div class="card">
+                <h3>UN Missions</h3>
+                <p>India is one of the largest contributors to UN peacekeeping.</p>
+            </div>
+
+            <div class="card">
+                <h3>World's Largest Army</h3>
+                <p>One of the strongest military forces globally.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 IndianHub 🇮🇳</p>
+    </footer>
+
+</body>
+
+</html>

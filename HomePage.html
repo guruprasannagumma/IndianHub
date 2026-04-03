@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndianHub Home Page</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script>
+        const sections = document.querySelectorAll('.section');
+
+        window.addEventListener('scroll', () => {
+            sections.forEach(sec => {
+                const top = sec.getBoundingClientRect().top;
+                if (top < window.innerHeight - 100) {
+                    sec.classList.add('fade-in');
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div class="logo">IN IndianHub</div>
+
+        <ul class="nav-links">
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="army.html">Army</a></li>
+            <li><a href="doctor.html">Doctors</a></li>
+            <li><a href="police.html">Police</a></li>
+            <li><a href="farmer.html">Farmers</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="hero">
+        <h1>India's Strength 🇮🇳</h1>
+        <p>Explore the power of people, resources, and innovation that make India strong.</p>
+        <button onclick="document.getElementById('explore').scrollIntoView({behavior:'smooth'})">
+    Explore Now
+</button>
+    </section>
+
+   <section id="explore" class="explore-section">
+
+    <h2>Explore India's Strength 🇮🇳</h2>
+    <p class="explore-sub">Discover the pillars that make India strong</p>
+
+    <div class="explore-grid">
+
+        <a href="army.html" class="explore-card">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.AEz_Rvb_o9vKW20xxF2DpwHaEJ?pid=Api&P=0&h=180">
+            <h3>Indian Army</h3>
+        </a>
+
+        <a href="doctors.html" class="explore-card">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.1RZKEHp1zgHo6B06VfoNlwHaE7?pid=Api&P=0&h=180">
+            <h3>Doctors</h3>
+        </a>
+
+        <a href="police.html" class="explore-card">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.WmJWTsJQLnQLLg34BeyxWQHaEK?pid=Api&P=0&h=180">
+            <h3>Police</h3>
+        </a>
+
+        <a href="farmers.html" class="explore-card">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.pF8u5tFVfoIpzyp1YCH9pgHaF7?pid=Api&P=0&h=180">
+            <h3>Farmers</h3>
+        </a>
+
+        <a href="resources.html" class="explore-card">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.TTi-uGR72lPv_oWhv0AeKwHaFW?pid=Api&P=0&h=180">
+            <h3>Resources</h3>
+        </a>
+
+    </div>
+
+</section>
+
+    <section class="about-india">
+    <h2>About India 🇮🇳</h2>
+    <p>
+        India is one of the fastest growing nations in the world, known for its rich culture, 
+        strong defense system, agricultural strength, and technological advancements. 
+        The unity of people and diversity of resources make India powerful and unique.
+    </p>
+</section>
+
+
+    <section class="categories">
+
+        <section class="categories">
+
+            <div class="card">
+                <h2><i class="fas fa-shield-alt"></i> Army</h2>
+                <p>Protecting the nation</p>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-user-doctor"></i> Doctors</h2>
+                <p>Saving lives</p>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-user-shield"></i> Police</h2>
+                <p>Maintaining law</p>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-tractor"></i> Farmers</h2>
+                <p>Feeding the nation</p>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-industry"></i> Resources</h2>
+                <p>Power of industries</p>
+            </div>
+
+        </section>
+
+    </section>
+
+    <section class="about">
+        <h2>About India</h2>
+        <p>India is one of the fastest growing nations with strong contributions from its people and resources.</p>
+    </section>
+    <section class="section fade-in"></section>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Column 1 -->
+            <div class="footer-col">
+                <h3>🇮🇳 IndianHub</h3>
+                <p>Showcasing the strength, unity, and resources of India.</p>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="army.html">Army</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="police.html">Police</a></li>
+                    <li><a href="farmers.html">Farmers</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="resources.html">Industries</a></li>
+                    <li><a href="#">Agriculture</a></li>
+                    <li><a href="#">Technology</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Email: support@indianhub.com</p>
+                <p>India 🇮🇳</p>
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            <p>© 2026 IndianHub | Proudly representing India 🇮🇳</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Farmers</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        const sections = document.querySelectorAll('.section');
+
+        window.addEventListener('scroll', () => {
+            sections.forEach(sec => {
+                const top = sec.getBoundingClientRect().top;
+                if (top < window.innerHeight - 100) {
+                    sec.classList.add('fade-in');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🇮🇳 IndianHub</div>
+        <ul class="nav-links">
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="army.html">Army</a></li>
+            <li><a href="doctor.html">Doctors</a></li>
+            <li><a href="police.html">Police</a></li>
+            <li><a href="farmer.html">Farmers</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero farmers-hero">
+        <h2><i class="fas fa-tractor"></i> Farmers</h2>
+        <p>The backbone of India's economy</p>
+    </section>
+
+    <section class="section">
+        <h2>About Farmers</h2>
+        <p>Farmers contribute significantly to India's economy by producing food and agricultural products.</p>
+    </section>
+
+    <section class="section">
+        <h2>Main Crops</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Rice</h3>
+            </div>
+            <div class="card">
+                <h3>Wheat</h3>
+            </div>
+            <div class="card">
+                <h3>Spices</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 IndianHub 🇮🇳</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Police</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        const sections = document.querySelectorAll('.section');
+
+        window.addEventListener('scroll', () => {
+            sections.forEach(sec => {
+                const top = sec.getBoundingClientRect().top;
+                if (top < window.innerHeight - 100) {
+                    sec.classList.add('fade-in');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🇮🇳 IndianHub</div>
+        <ul class="nav-links">
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="army.html">Army</a></li>
+            <li><a href="doctor.html">Doctors</a></li>
+            <li><a href="police.html">Police</a></li>
+            <li><a href="farmer.html">Farmers</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero police-hero">
+        <h2><i class="fas fa-user-shield"></i> Police</h2>
+        <p>Maintaining law and order in society</p>
+    </section>
+
+    <section class="section">
+        <h2>About Police</h2>
+        <p>The police force ensures safety, security, and law enforcement across the country.</p>
+    </section>
+
+    <section class="section">
+        <h2>Responsibilities</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Law Enforcement</h3>
+                <p>Maintaining law and order.</p>
+            </div>
+            <div class="card">
+                <h3>Crime Prevention</h3>
+                <p>Protecting citizens from crimes.</p>
+            </div>
+            <div class="card">
+                <h3>Traffic Control</h3>
+                <p>Managing road safety.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 IndianHub 🇮🇳</p>
+    </footer>
+
+</body>
+
+</html>
